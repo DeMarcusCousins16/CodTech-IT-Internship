@@ -1,2 +1,19 @@
-# CodTech-IT-Internship
-A Python repository featuring text summarization, speech-to-text, neural style transfer, and text generation using state-of-the-art deep learning models. Perfect for NLP and CV enthusiasts! Text Summarization (LSA, Sumy) Speech-to-Text (Google SpeechRecognition)  Neural Style Transfer (VGG-19, PyTorch)  Text Generation (GPT-2 &amp; LSTM) 
+# Text Summarization Tool
+
+## Overview
+This tool summarizes lengthy articles using Natural Language Processing techniques. It uses the `sumy` library to generate concise summaries.
+
+## How to Use
+1. Install dependencies:
+```bash
+pip install sumy
+```
+2. Run the script:
+```bash
+python main.py
+```
+
+## Sample Output
+The script takes a long paragraph as input and prints a 3-sentence summary.
+
+---
