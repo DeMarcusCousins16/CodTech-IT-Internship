@@ -1,29 +1,27 @@
-# Speech Recognition System
+# Neural Style Transfer
 
 ## Overview
-This basic Speech-to-Text system uses Python and the `SpeechRecognition` library to transcribe short audio clips.
+This script implements neural style transfer using PyTorch and VGG19 to apply an artistic style to a content image.
 
 ## Requirements
 - Python 3.x
-- `speechrecognition`
-- `pyaudio` (for microphone input, optional)
-- A `.wav` audio file
+- torch
+- torchvision
+- Pillow
+- matplotlib
 
 ## Setup
 ```bash
-pip install SpeechRecognition
-pip install pyaudio  # Only if you plan to use microphone input
+pip install torch torchvision pillow matplotlib
 ```
 
 ## Usage
-1. Place your `.wav` file in the same directory and name it `sample.wav` (or change the file name in `main.py`).
+1. Place a `content.jpg` and `style.jpg` in the project directory.
 2. Run the script:
 ```bash
 python main.py
 ```
+3. The styled image will be saved as `output.png`.
 
 ## Sample Output
-```text
-Transcription:
-Hello, this is a test of the speech recognition system.
-```
+An artistic rendering of `content.jpg` using the style of `style.jpg`.
